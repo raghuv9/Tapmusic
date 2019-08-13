@@ -4,43 +4,71 @@
 	<title>Musicapp</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <body>
 	<div class="app">
 		<header>
-			<h1>Tap Music</h1>
-			<p>Make music with one tap</p>
+			<div class="container">
+				<h1 class="text-primary text-center">Tap Music</h1>
+				<p class="text-primary text-center">Make music with one tap</p>
+			</div>
 		</header>
-		<div class="visual">
-			
-		</div>
-		<div class="pads">
-			<div class="pad1">
-				<audio src="./sounds/bubbles.mp3" class="sound"></audio>
+		<center>
+			<div class="visual">
+		</div><br/>
+		</center>
+		<div class="container mt-4">
+			<div class="row">
+				<div class="col-sm">
+					<div class="pad1" id="paditem">
+						<audio src="./sounds/bubbles.mp3" class="sound"></audio>
+					</div>
+				</div>
+				<div class="col-sm">
+					<div class="pad2" id="paditem">
+						<audio src="./sounds/clay.mp3" class="sound">
+						</audio>
+					</div>
+				</div>
+				<div class="col-sm">
+					<div class="pad3" id="paditem">
+						<audio src="./sounds/confetti.mp3" class="sound">
+						</audio>
+					</div>
+				</div>
 			</div>
-			<div class="pad2">
-				<audio src="./sounds/clay.mp3" class="sound">
-				</audio>
-			</div>
-			<div class="pad3">
-				<audio src="./sounds/confetti.mp3" class="sound">
-				</audio>
-			</div>
-			<div class="pad4">
-				<audio src="./sounds/glimmer.mp3" class="sound">
-				</audio>
-			</div>
-			<div class="pad5">
-				<audio src="./sounds/moon.mp3" class="sound">
-				</audio>
-			</div>
-			<div class="pad6">
-				<audio class="sound"  src="./sounds/ufo.mp3">
-				</audio>
+			<div class="row">
+				<div class="col-sm">
+					<div class="pad4" id="paditem">
+						<audio src="./sounds/glimmer.mp3" class="sound">
+						</audio>
+					</div>
+				</div>
+				<div class="col-sm">
+					<div class="pad5" id="paditem">
+						<audio src="./sounds/moon.mp3" class="sound">
+						</audio>
+					</div>
+				</div>
+				<div class="col-sm">
+					<div class="pad6" id="paditem">
+						<audio class="sound"  src="./sounds/ufo.mp3">
+						</audio>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-
+	<footer>
+		<!-- Footer -->
+<footer class="page-footer font-small blue pt-4">
+  <div class="footer-copyright text-center py-3">© 2019 Copyright:
+    <a href="#"> Tapmusic</a>
+  </div>
+</footer>
+<!-- Footer -->
+	</footer>
 	<script type="text/javascript" src="index.js"></script>
 </body>
 </html>
